@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airjordan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 15px 20px;
+            box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav img {
+            height: 40px;
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #ff5722;
+            color: #fff;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            color: #ff5722;
+        }
+        .shoe-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .shoe {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            width: calc(33% - 20px);
+        }
+        .shoe img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .shoe h4 {
+            margin: 10px 0;
+        }
+        .btn {
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+        .query-form {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .query-form h2 {
+            color: #ff5722;
+        }
+        .query-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .query-form input,
+        .query-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .query-form button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="Logo_NIKE.svg.png" alt="Nike Logo">
+            <ul>
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Welcome to Nike Limited Edition Shoes</h1>
+            <p>At Nike, we are passionate about providing you with the best in limited edition and designer footwear. Our collection is crafted with precision and style, ensuring that each pair not only looks great but also delivers exceptional performance.</p>
+            <p>Discover the extraordinary range of Nike shoes that blend cutting-edge technology with innovative design. From classic silhouettes to bold new styles, we have something for everyone. Join us on this journey of fashion and performance, and step up your shoe game with Nike.</p>
+            <div class="shoe-gallery">
+                <div class="shoe">
+                    <img src="Nike shoes1.jpeg" alt="Nike Dunk Low">
+                    <h4>Nike Dunk Low</h4>
+                    <p class="price">$128.43</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="shoe">
+                    <img src="Nike shoes2.jpeg" alt="Nike Revolution 7">
+                    <h4>Nike Revolution 7</h4>
+                    <p class="price">$121.22</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="shoe">
+                    <img src="Nike shoes3.jpeg" alt="Nike Air Max 1">
+                    <h4>Nike Air Max 1</h4>
+                    <p class="price">$101.18</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="shoe">
+                    <img src="Nike shoes4.jpeg" alt="Nike Impact 4">
+                    <h4>Nike Impact 4</h4>
+                    <p class="price">$116.55</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="shoe">
+                    <img src="Nike shoes5.jpeg" alt="Nike Revolution 6">
+                    <h4>Nike Revolution 6</h4>
+                    <p class="price">$134.39</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="query-form">
+                <h2>Have a Question? Ask Us!</h2>
+                <form action="submit_query.html" method="POST">
+           <label for="query">Your Query:</label>
+                    <textarea id="query" name="query" rows="4" required></textarea>
+
+                    <a href="submit_query.html"><button type="submit" class="btn">Submit</button></a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
